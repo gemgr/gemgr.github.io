@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
 
 	<head>
 		<!-- Meta Tags -->
@@ -9,15 +9,26 @@
 		<meta name=”description” content=””>
 		<meta name="keywords" content="">
 		<meta name="author" content="George Moustakas - Web Developer - Software Engineer">
-		<meta name="theme-color" content="#EE6E73">
+		<meta name="theme-color" content="#292C61">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106540549-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-106540549-1');
+		</script>
+		
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="https://gemgr.github.io/assets/image/favicon.jpg">
+		<link rel="shortcut icon" href="https://gemgr.github.io/assets/image/favicon.png">
 
 		<!-- Facebook -->
 		<meta property="og:title" content="George Moustakas - Web Developer - Software Engineer" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="https://gemgr.github.io/assets/image/avatar.jpg" />
+		<meta property="og:image" content="https://gemgr.github.io/assets/image/avatar.png" />
 		<meta property="og:url" content="https://gemgr.github.io/" />
 		<meta property="og:description" content="" />
 
@@ -26,7 +37,7 @@
 		<meta name="twitter:url" content="https://gemgr.github.io/" />
 		<meta name="twitter:title" content="George Moustakas - Web Developer - Software Engineer" />
 		<meta name="twitter:description" content="" />
-		<meta name="twitter:image" content="https://gemgr.github.io/assets/image/avatar.jpg" />
+		<meta name="twitter:image" content="https://gemgr.github.io/assets/image/avatar.png" />
 
 
 		<link rel="apple-touch-icon" sizes="76x76" href="assets/image/apple-icon.png">
@@ -36,6 +47,9 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="assets/css/app.min.css" rel="stylesheet" />
 		<style>
+			#fsBtn i{
+				margin-left: 3px !important;
+			}
 			.page-header{
 				background: rgb(41,45,97);
 				background: -moz-linear-gradient(top, rgba(41,45,97, .8) 23%, rgba(23,25,65, .6) 65%);
@@ -64,7 +78,7 @@
 			<div class="container">
 				<div class="navbar-translate">
 					<a class="navbar-brand" href="https://gemgr.github.io" rel="tooltip" 
-						title="Made with love from Greece" data-placement="bottom">
+						title="Made with Love from Greece" data-placement="bottom">
 						<img src="assets/image/avatar.png" alt="George Moustakas" 
 						style="width: 36px; height: 36px; margin-right: 10px; margin-top: -5px;"
 						class="img-fluid rounded-circle shadow-lg"> /
@@ -93,13 +107,17 @@
 							</div>
 						</div>
 					</div>
-
 					<ul class="navbar-nav">
+						<!--<li class="nav-item">
+							<a class="btn btn-default btn-icon btn-round" id="fsBtn" rel="tooltip" title="In fullscreen looks Better!" data-placement="bottom">
+								<i class="fas fa-external-link-square-alt"></i>
+							</a>
+						</li>-->
 						<li class="nav-item">
 							<a class="nav-link btn btn-warning btn-round shadow-lg" href="file/resume/George%20Moustakas%20-%20Resume%20(Late%202018%20Updated).pdf" rel="tooltip" title="Download my Resume" data-placement="bottom"> &nbsp;&nbsp; <i class="fas fa-file-download"></i> &nbsp; Resume.pdf &nbsp;&nbsp;</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link btn btn-primary btn-round shadow-lg" href="" rel="tooltip" title="Contact Me" data-placement="bottom"> &nbsp;&nbsp; <i class="fas fa-envelope"></i> &nbsp; Contact Me &nbsp;&nbsp;</a>
+							<a class="nav-link btn btn-primary btn-round shadow-lg" href="mailto:georgemou31@hotmail.com?Subject=Hello Form <Your Name>" rel="tooltip" title="Contact Me" data-placement="bottom"> &nbsp;&nbsp; <i class="fas fa-envelope"></i> &nbsp; Contact Me &nbsp;&nbsp;</a>
 						</li>
 					</ul>
 				</div>
@@ -128,16 +146,16 @@
 							
 								<div class="btn-wrapper mb-5 mb-3">
 									<div class="button-container">
-										<a href="" class="btn btn-icon btn-default btn-round shadow-lg">
+										<a href="https://github.com/gemgr" class="btn btn-icon btn-default btn-round shadow-lg">
 											<i class="fab fa-github"></i>
 										</a>
-										<a href="" class="btn btn-icon btn-warning btn-round shadow-lg">
+										<a href="https://www.instagram.com/george_moustakas/" class="btn btn-icon btn-warning btn-round shadow-lg">
 											<i class="fab fa-instagram"></i>
 										</a>
-										<a href="" class="btn btn-icon btn-info btn-round shadow-lg">
+										<a href="https://twitter.com/george_mou" class="btn btn-icon btn-info btn-round shadow-lg">
 											<i class="fab fa-twitter"></i>
 										</a>
-										<a href="" class="btn btn-icon btn-info btn-round shadow-lg">
+										<a href="https://www.linkedin.com/in/georgemou/" class="btn btn-icon btn-info btn-round shadow-lg">
 											<i class="fab fa-linkedin"></i>
 										</a>
 									</div>
